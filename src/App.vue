@@ -1,17 +1,16 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png" />
-    <HelloWorld msg="Welcome to Your Vue.js App" />
+    <Tree/>
   </div>
 </template>
 
 <script>
-import HelloWorld from "./components/HelloWorld.vue";
 
+import Tree from "./components/Tree";
 export default {
   name: "App",
   components: {
-    HelloWorld,
+    Tree
   },
 };
 </script>
@@ -24,5 +23,28 @@ export default {
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;
+}
+body {
+  font-family: Menlo, Consolas, monospace;
+  color: #444;
+}
+.item {
+  cursor: pointer;
+  div {
+    text-align: left;
+  }
+}
+.bold {
+  font-weight: bold;
+  text-align: left;
+}
+li {
+  list-style: none;
+  text-align: left;
+}
+ul {
+  padding-left: 1em;
+  line-height: 1.5em;
+  list-style-type: none;
 }
 </style>
